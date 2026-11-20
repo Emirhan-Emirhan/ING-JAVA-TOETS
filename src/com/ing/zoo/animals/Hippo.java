@@ -1,24 +1,23 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
 import com.ing.zoo.interfaces.Herbivore;
 
-public class Zebra extends Animal implements Herbivore {
+public class Hippo extends Animal implements Herbivore {
     public String helloText;
     public String eatText;
-    public String trick;
 
-    public Zebra()
+    public Hippo()
     {
     }
 
     public void sayHello()
     {
-        helloText = "zebra zebra";
+        helloText = "splash";
         System.out.println(helloText);
     }
 
     public void eatLeaves()
     {
-        eatText = "munch munch zank yee bra";
+        eatText = "munch munch lovely";
         System.out.println(eatText);
     }
 }

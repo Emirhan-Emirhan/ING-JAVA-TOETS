@@ -1,9 +1,8 @@
 package com.ing.zoo;
-
+import com.ing.zoo.interfaces.Carnivore;
 import java.util.Random;
 
-public class Tiger {
-    public String name;
+public class Tiger extends Animal implements Carnivore {
     public String helloText;
     public String eatText;
     public String trick;
@@ -20,7 +19,7 @@ public class Tiger {
 
     public void eatMeat()
     {
-        eatText = "nomnomnom oink wubalubadubdub";
+        eatText = "nomnomnom meow, I mean Rraaarrww";
         System.out.println(eatText);
     }
 

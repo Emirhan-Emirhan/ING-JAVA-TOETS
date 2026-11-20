@@ -1,7 +1,7 @@
 package com.ing.zoo;
+import com.ing.zoo.interfaces.Carnivore;
 
-public class Lion {
-    public String name;
+public class Lion extends Animal implements Carnivore{
     public String helloText;
     public String eatText;
 
@@ -21,3 +21,4 @@ public class Lion {
         System.out.println(eatText);
     }
 }
+    

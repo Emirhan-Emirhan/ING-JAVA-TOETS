@@ -1,9 +1,10 @@
 package com.ing.zoo;
 
+import com.ing.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Herbivore;
 import java.util.Random;
 
-public class Pig {
-    public String name;
+public class Pig extends Animal implements Carnivore, Herbivore {
     public String helloText;
     public String eatText;
     public String trick;
@@ -14,7 +15,7 @@ public class Pig {
 
     public void sayHello()
     {
-        helloText = "splash";
+        helloText = "oink oink";
         System.out.println(helloText);
     }
 
